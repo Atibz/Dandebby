@@ -1,0 +1,43 @@
+$background-color: #ffffff; 
+    $default-color: #364d59; 
+    $heading-color: #52565e; 
+    $accent-color: rgb(35, 35, 161);
+    $surface-color: #ffffff;
+    $contrast-color: #ffffff;
+:root { 
+    --background-color: #ffffff; 
+    --default-color: #364d59; 
+    --heading-color: #52565e; 
+    --accent-color: rgb(35, 35, 161);
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+}
+a {
+  color: var(-surface-color-);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.logo, h1{
+    text-decoration: none;
+}
+.hero, h2{
+    color: $surface-color;
+}
+.hero a{
+    text-decoration: none;
+}
+.projects .portfolio-content img {
+    transition: 0.3s;
+    width: 1024px;
+    height: 768px;
+  }
+  .footer {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    background: url("../img/footer-bg.jpg") top center no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    position: relative;
+  }
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
